@@ -20,11 +20,12 @@ guessBtn.addEventListener('click', function() {
     
     // BUG: Feedback messages are backwards!
     if (guess === secretNumber) {
-        feedback.textContent = 'Too high! Try again.';
+        feedback.textContent = 'Congratulations! You got it!';
+       
     } else if (guess < secretNumber) {
         feedback.textContent = 'Too low! Try again.';
     } else {
-        feedback.textContent = 'Congratulations! You got it!';
+        feedback.textContent = 'Too high! Try again.';
     }
     
     guessInput.value = '';
